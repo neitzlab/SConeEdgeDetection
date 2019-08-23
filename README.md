@@ -10,7 +10,8 @@ The electrophysiology and morphology data is included, along with representative
 #### Contents:
 * `em_statistics.m` - Contains raw data and analysis for all quantified morphological features: midget bipolar cell ribbon synapse counts, midget bipolar cell soma diameters, horizontal cell primary dendrite diameters and horizontal cell soma diameters.
 * `em_renders.m` - Contains code to extract `.json` files and render neurons from the original annotation data through SBFSEM-tools. See info on the `.stl` and `.vtk` files below for simpler options to view the 3D reconstructions.
-* `ephys_figures.m` - Extracts and plots the electrophysiology data: impulse response functions, spatial tuning curves and spike responses to S-cone isolating stimuli.
+* `ephys_spikes.m` - Plots the raw spike responses to S-cone isolating and achromatic stimuli.
+* `ephys_filters.m` - Plots the S-OFF midget impulse response functions.
   
 #### Dependencies
 To build and view the 3D reconstructions as created for the published figures, you will need:
@@ -22,8 +23,8 @@ Each neuron is also provided as `.stl` and `.vtk` files to provide alternatives 
 * A 3D view software capable of opening `.vtk` files. The advantage here is viewing several neurons simultaneously. I use [Paraview][paraview].
 
 #### More information:
-* [Information][viking] on the annotation software, developed by Jamie Anderson in the Marc and Jones labs.
-* [Information][sbfsemrepo] on the 3D analysis and visualization software, developed by Sara Patterson in the Neitz lab.
+* [Annotation software][viking] developed by Jamie Anderson in the Marc and Jones labs.
+* [3D analysis and visualization software][sbfsemrepo] developed by Sara Patterson in the Neitz lab.
 * Questions or comments: sarap44@uw.edu
 
 
